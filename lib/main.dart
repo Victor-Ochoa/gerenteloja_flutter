@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gerenteloja/screens/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,8 +9,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          backgroundColor: Colors.grey[800],
+          primarySwatch: Colors.grey,
+          primaryColor: Colors.pinkAccent,
+          buttonColor: Colors.pinkAccent),
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
     );
   }
 }
